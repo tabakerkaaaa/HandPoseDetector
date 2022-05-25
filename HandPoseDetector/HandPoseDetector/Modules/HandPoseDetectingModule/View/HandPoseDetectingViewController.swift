@@ -88,6 +88,7 @@ final class HandPoseDetectingViewController: UIViewController {
         view.backgroundColor = model.backgroundColor
         closeButton.setBackgroundImage(model.closeIcon, for: .normal)
         closeButton.tintColor = model.closeIconColor
+        predictionLabel.isHidden = true
     }
     
     private func addSubviews() {
@@ -173,6 +174,7 @@ final class HandPoseDetectingViewController: UIViewController {
         }
         session.commitConfiguration()
         cameraFeedSession = session
+        predictionLabel.isHidden = false
     }
     
     private func makePredictionLabel() -> UILabel {

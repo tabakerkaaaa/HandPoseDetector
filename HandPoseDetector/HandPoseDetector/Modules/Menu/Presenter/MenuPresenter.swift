@@ -28,7 +28,7 @@ final class MenuPresenter {
     private func setModuleUI() {
         let model = MenuModel(
             drawButtonTitle: "Открыть рисование жестом",
-            handPoseDetectButtonTitle: "Открыть распознование жестов",
+            handPoseDetectButtonTitle: "Открыть распознавание жестов",
             buttonTitleColor: .white,
             buttonColor: .etuBlue,
             backgroundColor: .white,

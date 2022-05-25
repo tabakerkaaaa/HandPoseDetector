@@ -5,6 +5,8 @@
 //  Created by n.s.babenko on 07.05.2022.
 //
 
+import Foundation
+
 final class HandPoseDetectingCoordinator: BaseCoordinator, Coordinatable {
     private let router: Routable
     
@@ -20,7 +22,9 @@ final class HandPoseDetectingCoordinator: BaseCoordinator, Coordinatable {
                 return
             }
             
-            self.router.dismissModule()
+            DispatchQueue.main.async {
+                self.router.dismissModule()
+            }
             self.finishFlow?()
         }
         

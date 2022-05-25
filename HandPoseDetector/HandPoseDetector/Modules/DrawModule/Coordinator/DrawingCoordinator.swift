@@ -5,6 +5,8 @@
 //  Created by n.s.babenko on 02.05.2022.
 //
 
+import Foundation
+
 final class DrawingCoordinator: BaseCoordinator, Coordinatable {
     private let router: Routable
     
@@ -20,7 +22,9 @@ final class DrawingCoordinator: BaseCoordinator, Coordinatable {
                 return
             }
             
-            self.router.dismissModule()
+            DispatchQueue.main.async {
+                self.router.dismissModule()
+            }
             self.finishFlow?()
         }
         

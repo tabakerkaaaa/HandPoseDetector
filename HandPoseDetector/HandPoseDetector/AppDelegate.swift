@@ -31,5 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coordinator.start()
         return true
     }
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        UIInterfaceOrientationMask(
+            rawValue: UIInterfaceOrientationMask.portrait.rawValue
+        )
+    }
 }
 

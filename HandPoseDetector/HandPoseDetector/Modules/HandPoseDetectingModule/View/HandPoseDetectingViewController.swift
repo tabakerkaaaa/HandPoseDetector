@@ -206,7 +206,7 @@ final class HandPoseDetectingViewController: UIViewController {
         let label = prediction.label
         if let confidence = prediction.labelProbabilities[label] {
             predictionLabel.text =
-            "Hand Pose: \(label)\nConfidence: \(confidence)"
+            "Прогнозируемый жест: \(label)\nВероятность: \(confidence)"
         }
     }
     

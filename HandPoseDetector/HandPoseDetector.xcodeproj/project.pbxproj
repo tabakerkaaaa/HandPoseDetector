@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D1C20FE283FB8D8000B9A21 /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C20FD283FB8D8000B9A21 /* RouterMock.swift */; };
+		2D1C2100283FBE5A000B9A21 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C20FF283FBE5A000B9A21 /* CoordinatorTests.swift */; };
 		2D471385281EB6A8003A5EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D471384281EB6A8003A5EE0 /* AppDelegate.swift */; };
 		2D47138E281EB6A9003A5EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D47138D281EB6A9003A5EE0 /* Assets.xcassets */; };
-		2D47139C281EB6A9003A5EE0 /* HandPoseDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D47139B281EB6A9003A5EE0 /* HandPoseDetectorTests.swift */; };
 		2D4713A6281EB6A9003A5EE0 /* HandPoseDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4713A5281EB6A9003A5EE0 /* HandPoseDetectorUITests.swift */; };
 		2D4713A8281EB6A9003A5EE0 /* HandPoseDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4713A7281EB6A9003A5EE0 /* HandPoseDetectorUITestsLaunchTests.swift */; };
 		2D4713BB281EB922003A5EE0 /* MenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4713BA281EB922003A5EE0 /* MenuAssembly.swift */; };
@@ -60,11 +61,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D1C20FD283FB8D8000B9A21 /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
+		2D1C20FF283FBE5A000B9A21 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		2D471381281EB6A8003A5EE0 /* HandPoseDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandPoseDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D471384281EB6A8003A5EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D47138D281EB6A9003A5EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D471397281EB6A9003A5EE0 /* HandPoseDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandPoseDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D47139B281EB6A9003A5EE0 /* HandPoseDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseDetectorTests.swift; sourceTree = "<group>"; };
 		2D4713A1281EB6A9003A5EE0 /* HandPoseDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandPoseDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4713A5281EB6A9003A5EE0 /* HandPoseDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseDetectorUITests.swift; sourceTree = "<group>"; };
 		2D4713A7281EB6A9003A5EE0 /* HandPoseDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D1C20FC283FB8C6000B9A21 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2D1C20FD283FB8D8000B9A21 /* RouterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		2D471378281EB6A8003A5EE0 = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +172,8 @@
 		2D47139A281EB6A9003A5EE0 /* HandPoseDetectorTests */ = {
 			isa = PBXGroup;
 			children = (
-				2D47139B281EB6A9003A5EE0 /* HandPoseDetectorTests.swift */,
+				2D1C20FC283FB8C6000B9A21 /* Mocks */,
+				2D1C20FF283FBE5A000B9A21 /* CoordinatorTests.swift */,
 			);
 			path = HandPoseDetectorTests;
 			sourceTree = "<group>";
@@ -572,7 +583,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D47139C281EB6A9003A5EE0 /* HandPoseDetectorTests.swift in Sources */,
+				2D1C20FE283FB8D8000B9A21 /* RouterMock.swift in Sources */,
+				2D1C2100283FBE5A000B9A21 /* CoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
